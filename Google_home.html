@@ -1,0 +1,47 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Google Home
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <script type="text/javascript">
+        function getSearchText(){
+            var text = document.getElementById("text_from_user").value;
+            console.log("User has given the following input -- ",text);
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="main__layout">
+            <!-- header -->
+            <div >
+                <header class="header">
+                    <p id="gmail">Gmail</p>
+                     <p id="images">Images</p>
+                     <i class="fa fa-th" aria-hidden="true" style="margin-left: 20px;"></i>
+                     <i class="fa fa-user" aria-hidden="true" style="margin-left: 20px;"></i>
+                </header>
+            </div>
+            <!-- Google image -->
+            <div class="image__section">
+                <img src="google.png" alt="google-image" class="google__image">
+            </div>
+            <!-- Google Search  -->
+            <div class="search__input">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="input__element" id="text_from_user">
+                <i class="fa fa-microphone" aria-hidden="true"></i>
+            </div>
+            <!-- Google buttons  -->
+            <div class="button__section">
+                <button onclick="getSearchText()">Google Search</button>
+                <button>I'm feeling lucky</button>
+            </div>
+        </div>
+        
+    </body>
+</html>

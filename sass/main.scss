@@ -1,0 +1,58 @@
+@import "reset";
+
+.main__layout{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .header{
+        display: flex;
+        float: right;
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.87);
+
+        #images{
+            margin-left: 20px;
+        }
+    }
+    .image__section{
+        margin-top: 40px;
+        img{
+            width: 400px;
+            height: 150px;
+            object-fit: contain;
+        }
+    }
+    .search__input{
+        display: flex;
+        align-items: center;
+        border: 1px solid lightgray;
+        height: 30px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        width: 75vw;
+        margin: 0 auto;
+        margin-top: 10px;
+        max-width: 560px;
+        .input__element{
+            flex: 1;
+            padding: 10px 20px;
+            font-size: medium;
+            border: none;
+        
+        }
+    }   
+    
+    .button__section{
+        margin-top: 30px;
+        justify-content:space-evenly;
+        button{
+            padding: 7px 15px;
+            border: 1px solid white;
+            background-color:#f8f8f8;
+            color: #5f6368;
+    }
+    button:focus{
+        outline-width: 0;
+    }
+}
